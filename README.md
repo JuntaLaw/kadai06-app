@@ -1,5 +1,4 @@
-# ここにタイトルを入れる
-Kadai06 PHP01　Nyatflix
+# Kadai06 PHP01　Nyatflix 
 Next.js, Supabase, Prismaで架空の動画配信サイト"Nyatflix"のログイン認証画面作ってみた
 ## DEMO
 
