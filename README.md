@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ここにタイトルを入れる
+Kadai06 PHP01　Nyatflix
+Next.js, Supabase, Prismaで架空の動画配信サイト"Nyatflix"のログイン認証画面作ってみた
+## DEMO
 
-## Getting Started
+  - デプロイしている場合はURLを記入（任意）
 
-First, run the development server:
+## 紹介と使い方
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  - 架空の動画配信サイト"Nyatflix"のログイン認証画面です 
+  - E-mail、Github、Googleアカウントでの新規登録とログインが可能です
+  - 登録＆ログインするとコンテンツページへ 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 工夫した点
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  - 卒業制作に使用する予定の技術（Next.js、Supabase、Prisma）を使ってみた
+  - UIにはShadcn/UIをTailwindCSSと合わせて使用してみた
+  - 認証には Next.authを使用してみた
+  - 卒業制作では、動画配信と動画編集の機能を持たせたサービスを作成予定です。そのため、まずは練習として、既存の動画配信サイトのクローン的なものを作成してみようと思いました。今週はまずログイン認証画面まで作成し、来週以降、これをベースに機能を追加していけたらと考えています。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## 苦戦した点
 
-To learn more about Next.js, take a look at the following resources:
+  - SupabaseとPrismaにはじめてチャレンジしたので、まず理解するところまででかなり時間を使ってしまった
+  - ログイン認証画面までしかできていないので、今後コンテンツページを作り込む
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 参考にした web サイトなど 
+  - https://www.youtube.com/watch?v=mTW3V2IpOrg&t=3s
+  - Next.js: https://nextjs.org/ 
+  - Supabase: https://supabase.com/
+  - Prisma: https://www.prisma.io/
+  - Tailwind.css: https://tailwindcss.com/
+  - Shadcn/UI: https://ui.shadcn.com/
+  - Next-Auth: https://next-auth.js.org/
