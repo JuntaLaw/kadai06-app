@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Heart, PlayCircle } from "lucide-react";
 import PlayVideoModal from "./PlayVideoModal";
 import { useState } from "react";
+import { addTowatchlist, deleteFromWatchlist } from "../action";
+import { usePathname } from "next/navigation";
+import path from "path";
 
 interface iAppProps {
     title: string;
@@ -29,6 +32,7 @@ export function MovieCard({
     year
 }: iAppProps) {
     const [open, setOpen] = useState(false)
+    const pathName = usePathname();
     return (
         <>
             <button onClick={() => setOpen(true)} className="-mt-14">
@@ -36,13 +40,18 @@ export function MovieCard({
             </button>
 
             <div className="right-5 top-5 absolute z-10">
-                {watchList ? (<form>
-                    <Button variant="outline" size="icon">
-                        <Heart className="w-4 h-4 text-red-500" />
-                    </Button>
-                </form>
+                {watchList ? (
+                    <form action={deleteFromWatchlist}>
+                        <input type="hidden" name="watchlistId" value={watchListId} />
+                        <input type="hidden" name="pathname" value={pathName} />
+                        <Button variant="outline" size="icon">
+                            <Heart className="w-4 h-4 text-red-500" />
+                        </Button>
+                    </form>
                 ) : (
-                    <form>
+                    <form action={addTowatchlist}>
+                        <input type="hidden" name="movieId" value={movieId} />
+                        <input type="hidden" name="pathname" value={pathName} />
                         <Button variant="outline" size="icon">
                             <Heart className="w-4 h-4" />
                         </Button>
@@ -60,7 +69,17 @@ export function MovieCard({
                 <p className="line-clamp-1 text-sm text-gray-200 font-light">{overview}</p>
             </div>
 
-            <PlayVideoModal youtubeUrl={youtubeUrl} key={movieId} title={title} overview={overview} state={open} changestate={setOpen} />
+            <PlayVideoModal
+                youtubeUrl={youtubeUrl}
+                key={movieId}
+                title={title}
+                overview={overview}
+                state={open}
+                changeState={setOpen}
+                age={age}
+                duration={time}
+                release={year}
+            />
         </>
     );
 }
