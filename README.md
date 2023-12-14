@@ -54,11 +54,11 @@ Next.js, Supabase, Prismaで猫動画専門サイトNYATFLIXを作ってみた
   - ログインページの背景画像は、Stable DiffusionのDreamStudioにNETFLIXの背景画像を読み込ませて、猫画像で同様のものを作成するように指示して書き出しています。
   - ロゴはCanvaで作成しました。
 
-  - UIにはShadcn/UIを使用しています（https://ui.shadcn.com/）めっちゃ便利。
+  - UIにはShadcn/UIを使用しています。めっちゃ便利。
+  
+  - ログイン認証には Next.authを使用しています。
 
-  - ログイン認証には Next.authを使用しています（https://next-auth.js.org/）。
-
-  - コンテンツ素材のアップロードにCloudinary (https://cloudinary.com/)を使用。こちらのAPIは今後の開発に使用していきたいです。 
+  - コンテンツ素材のアップロードにCloudinaryを使用。こちらのAPIは今後の開発に使用していきたいです。 
 
 ## 苦戦した点
 
