@@ -28,10 +28,10 @@ Next.js, Supabase, Prismaで猫動画専門サイトNYATFLIXを作ってみた
   - 卒業制作では、動画配信と動画編集の機能を持たせたサービスを作成予定です。そのため、まずは練習として、既存の動画配信サイトのクローン的なものを作成してみました。先週はまずログイン認証画面まで作成しており、今週はその継続でコンテンツページの作成を行いました（そのため、開発フォルダは先週のものを継続して使用し、デプロイもそのリポジトリから行っています。リポジトリ名が06のままで申し訳ございません）。
 
   - 技術選定について① Next.js:
-    Next.jsはReactのフレームワーク。ReactはUI構築に特化しているのに対し、Next.jsはSSR（サーバーサイドレンダリング）に対応している。Next.jsを使用することで、サーバーサイドを別に構築せずにWebアプリケーションの開発ができる。実際に、PHP環境からNext.jsへのリプレイスが行われているケースが最近は多い。
-     - DMMの事例：https://logmi.jp/tech/articles/320546
+    Next.jsはReactのフレームワーク。ReactはUI構築に特化しているのに対し、Next.jsはSSR（サーバーサイドレンダリング）に対応している。Next.jsを使用することで、サーバーサイドを別に構築せずにWebアプリケーションの開発ができる。実際に、PHP環境からNext.jsへのリプレイスが行われているケースが最近は多い模様。そのせいか、最近、デジタル庁のサイトが逆にNext.jsからPHPへ戻った？（諸説あり）ということが話題になっていた。
      - Pixivの事例：https://inside.pixiv.blog/2022/08/15/120000 
      - PR TIMESの事例: https://developers.prtimes.jp/2023/12/13/replace-press-release-page-with-nextjs/ 
+     - デジタル庁のサイトがNext.jsからphpとjQueryに先祖返りしたわけではなかった： https://note.com/akikito/n/n56d7ebef50d4
   
   - 技術選定について② Supabase:
     Supabaseとは、Supabase は、オープンソースの Firebase の代替品（と公式が言っている）。データベースはFirebaseのNosqlと違い、RDBのPostgreSQLを使用している。PostgreSQLをベースに、リアルタイム更新、認証、ストレージ、サーバーレス関数など、フルスタック開発に必要な機能が提供されている。Next.jsとも相性が良く、統合して使用するための公式テンプレートも提供されている。 
