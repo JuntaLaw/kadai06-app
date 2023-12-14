@@ -65,7 +65,7 @@ export default function SeedDatabase() {
                 age: 0,
                 duration: 0.2,
                 imageString:
-                    "https://image.tmdb.org/t/p/original/or0E36KfzJYZwqXeiCfm1JgepKF.jpg",
+                    "https://image.tmdb.org/t/p/original/ymcff5lHk5u6Rr2m2fKyIiHK0mw.jpg",
                 overview:
                     "猫村ねこは、自分を拾ってくれた飼い主・ぼっちゃんとの再会を果たすため、家政婦として働いてお金を貯めるべく村田家政婦紹介所の門をたたく。家政婦紹介所の長、村田の奥さんも家政婦志望の猫に戸惑うが、その家事能力の高さを認め、犬神家へ家政婦として奉公させることに。緊張しながら向かった犬神家は、とてもお金持ちのようだが、何やら問題を抱えているようで――。",
                 release: 2020,
