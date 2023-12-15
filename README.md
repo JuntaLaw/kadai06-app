@@ -3,7 +3,7 @@ Next.js, Supabase, Prismaで猫動画専門サイトNYATFLIXを作ってみた
 
 ## DEMO
 
-  - https://kadai06-app-h979-9m4pysqsf-junko-satos-projects.vercel.app/login
+  - https://kadai06-app.vercel.app
 
 ## 紹介と使い方
 
