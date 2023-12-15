@@ -14,7 +14,7 @@ Next.js, Supabase, Prismaで猫動画専門サイトNYATFLIXを作ってみた
   - 登録＆ログインするとコンテンツページへ。
 ![contents page capture](/capture/Screenshot_contents.png)
   - コンテンツのプレビュー右上にあるハートボタンを押すと、Watch Listにお気に入り登録できます。Watchlist内での削除も可能です。
-![watchlist page capture](/capture/Screenshot_watchlist.png)
+![watchlist page capture](/capture/Screenshot_watchlist02.png)
 
     - SQLファイルはMigration時のものが下記フォルダにあります。 
   prisma/migrations/20231212170903_my_migrate_init/migration.sql
